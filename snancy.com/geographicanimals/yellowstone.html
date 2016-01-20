@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+    	
+		<title>Yellowstone</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Nancy, Cao, Website, Girl, Technology, Tech, Computer, Science, Art, Creative, Writing"  />
+		<meta name="description" content="Nancy's portfolio website. Learning HTML/CSS/Javascript." />
+        <meta name="author" content ="Nancy Cao"  />
+        
+        
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'  />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+        
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    	<script type="text/javascript">
+		
+		function swapPic1(obj) {
+  				var x=document.images
+
+ 				if (x[0].src.match("animals/grey_wolf.png")) {
+  		    	    x[0].src="animals/grey_wolf_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[0].src="animals/grey_wolf.png";
+  				}
+      	}
+		function swapPic2(obj) {
+  				var x=document.images
+
+ 				if (x[1].src.match("animals/canadian_lynx.png")) {
+  		    	    x[1].src="animals/canadian_lynx_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[1].src="animals/canadian_lynx.png";
+  				}
+      	}
+		
+		function swapPic3(obj) {
+  				var x=document.images
+
+ 				if (x[2].src.match("animals/coyote.png")) {
+  		    	    x[2].src="animals/coyote_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[2].src="animals/coyote.png";
+  				}
+      	}
+		
+		function swapPic4(obj) {
+  				var x=document.images
+
+ 				if (x[3].src.match("animals/chorus_frog.png")) {
+  		    	    x[3].src="animals/chorus_frog_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[3].src="animals/chorus_frog.png";
+  				}
+      	}
+		
+		function swapPic5(obj) {
+  				var x=document.images
+
+ 				if (x[4].src.match("animals/mountain_lion.png")) {
+  		    	    x[4].src="animals/mountain_lion_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[4].src="animals/mountain_lion.png";
+  				}
+      	}
+		
+		function swapPic6(obj) {
+  				var x=document.images
+
+ 				if (x[5].src.match("animals/grizzly_bear.png")) {
+  		    	    x[5].src="animals/grizzly_bear_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[5].src="animals/grizzly_bear.png";
+  				}
+      	}
+		
+		function swapPic7(obj) {
+  				var x=document.images
+
+ 				if (x[6].src.match("animals/bison.png")) {
+  		    	    x[6].src="animals/bison_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[6].src="animals/bison.png";
+  				}
+      	}
+		</script>
+    
+
+	</head>
+    
+    <body>    
+    	<div id="header">
+        	<div id="header-content">
+	    		<h1><a href="home.html" title="Home">Traversing through Geographic Space and Animal Sounds</a></h1>
+            </div>
+    	</div>
+            
+            </div>
+        </div>
+        
+        <div id ="picture3">
+        	<div style="position: absolute; left: 1000px; top: 300px;">
+                <div class="button" id="grey wolf">
+        			<a href="javascript:playPause();">
+            			<img id="grey wolf" src="animals/grey_wolf_dark.png" width="150" height="150" alt="grey wolf" onclick="swapPic1(this)" />
+        			</a>
+        	
+            		<audio id="grey wolf" preload loop>
+            			<source src="noises/grey_wolf.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+        
+       				<script type="text/javascript">
+       					function playPause() {
+       						var song = document.getElementsByTagName('audio')[0];
+							song.currentTime = 0;
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+    			</div>
+			</div> 
+            <div style="position: absolute; left: 500px; top: 550px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause2();">
+            			<img id="canadian lync" src="animals/canadian_lynx_dark.png" width="150" height="150" alt="canadian lynx" onclick="swapPic2(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/canadian_lynx.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause2() {
+       						var song = document.getElementsByTagName('audio')[1];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 1300px; top: 700px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause3();">
+            			<img id="coyote" src="animals/coyote_dark.png" width="150" height="150" alt="coyote" onclick="swapPic3(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/coyote.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause3() {
+       						var song = document.getElementsByTagName('audio')[2];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 850px; top: 750px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause4();">
+            			<img id="chorus frog" src="animals/chorus_frog_dark.png" width="150" height="150" alt="chorus frog" onclick="swapPic4(this)"/>
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/chorus_frog.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause4() {
+       						var song = document.getElementsByTagName('audio')[3];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 1300px; top: 350px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause5();">
+            			<img id="mountain lion" src="animals/mountain_lion_dark.png" width="150" height="150" alt="mountain lion" onclick="swapPic5(this)"/>
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/mountain_lion.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause5() {
+       						var song = document.getElementsByTagName('audio')[4];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 700px; top: 250px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause6();">
+            			<img id="grizzly bear" src="animals/grizzly_bear_dark.png" width="150" height="150" alt="grizzly bear" onclick="swapPic6(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/grizzly_bear.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause6() {
+       						var song = document.getElementsByTagName('audio')[5];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 450px; top: 300px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause7();">
+            			<img id="bison" src="animals/bison_dark.png" width="150" height="150" alt="bison" onclick="swapPic7(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/bison.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause7() {
+       						var song = document.getElementsByTagName('audio')[6];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            
+        	<div style="position: absolute; left: 360px; top: 150px;">
+            	<a href="yellowstone_to_glacier.html"><img src="arrows/nw-black.png" width="100" height="100" alt="left arrow" /></a>
+            </div>
+            <div style="position: absolute; left: 360px; top: 920px;">
+            	<a href="yellowstone_to_yosemite.html"><img src="arrows/sw-white.png" width="100" height="100" alt="up arrow" /></a>
+            </div>
+            <div style="position: absolute; left: 1440px; top: 910px;">
+            	<a href="yellowstone_to_smoky.html"><img src="arrows/se-white.png" width="100" height="100" alt="up arrow" /></a>
+            </div>
+            <div style="position: absolute; left: 900px; top: 940px;">
+            	<a href="yellowstone_to_grand_canyon.html"><img src="arrows/down-black.png" width="100" height="100" alt="wolverine" /></a>
+            </div>
+        
+        	
+        </div>
+       
+
+		<div id="footer">
+			<div id="footer-content">
+				
+                <p>&copy; 2014 Nancy Cao | About | <a href="#">Back to top</a></p>
+			
+            </div>
+		</div>
+        
+    </body>
+</html>

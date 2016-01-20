@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+    	
+		<title>Joshua Tree</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Nancy, Cao, Website, Girl, Technology, Tech, Computer, Science, Art, Creative, Writing"  />
+		<meta name="description" content="Nancy's portfolio website. Learning HTML/CSS/Javascript." />
+        <meta name="author" content ="Nancy Cao"  />
+        
+        
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'  />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+        
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    	<script type="text/javascript">
+		
+		function swapPic1(obj) {
+  				var x=document.images
+
+ 				if (x[0].src.match("animals/california_tree_frog.png")) {
+  		    	    x[0].src="animals/california_tree_frog_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[0].src="animals/california_tree_frog.png";
+  				}
+      	}
+		function swapPic2(obj) {
+  				var x=document.images
+
+ 				if (x[1].src.match("animals/mountain_lion.png")) {
+  		    	    x[1].src="animals/mountain_lion_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[1].src="animals/mountain_lion.png";
+  				}
+      	}
+		
+		function swapPic3(obj) {
+  				var x=document.images
+
+ 				if (x[2].src.match("animals/roadrunner.png")) {
+  		    	    x[2].src="animals/roadrunner_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[2].src="animals/roadrunner.png";
+  				}
+      	}
+		
+		function swapPic4(obj) {
+  				var x=document.images
+
+ 				if (x[3].src.match("animals/rattlesnake.png")) {
+  		    	    x[3].src="animals/rattlesnake_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[3].src="animals/rattlesnake.png";
+  				}
+      	}
+		
+		function swapPic5(obj) {
+  				var x=document.images
+
+ 				if (x[4].src.match("animals/burrowing_owl.png")) {
+  		    	    x[4].src="animals/burrowing_owl_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[4].src="animals/burrowing_owl.png";
+  				}
+      	}
+		
+		function swapPic6(obj) {
+  				var x=document.images
+
+ 				if (x[5].src.match("animals/coyote.png")) {
+  		    	    x[5].src="animals/coyote_dark.png";
+  				}
+
+ 				else
+				{
+  		    	    x[5].src="animals/coyote.png";
+  				}
+      	}
+		</script>
+    
+
+	</head>
+    
+    <body>    
+    	<div id="header">
+        	<div id="header-content">
+	    		<h1><a href="home.html" title="Home">Traversing through Geographic Space and Animal Sounds</a></h1>
+            </div>
+    	</div>
+            
+            </div>
+        </div>
+        
+        <div id ="picture2">
+        	<div style="position: absolute; left: 400px; top: 800px;">
+                <div class="button" id="california tree frog">
+        			<a href="javascript:playPause();">
+            			<img id="california tree frog" src="animals/california_tree_frog_dark.png" width="150" height="150" alt="california_tree_frog" onclick="swapPic1(this)" />
+        			</a>
+        	
+            		<audio id="california tree frog" preload loop>
+            			<source src="noises/california_tree_frog.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+        
+       				<script type="text/javascript">
+       					function playPause() {
+       						var song = document.getElementsByTagName('audio')[0];
+							song.currentTime = 0;
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+    			</div>
+			</div> 
+            <div style="position: absolute; left: 850px; top: 350px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause2();">
+            			<img id="mountain lion" src="animals/mountain_lion_dark.png" width="150" height="150" alt="mountain lion" onclick="swapPic2(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/mountain_lion.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause2() {
+       						var song = document.getElementsByTagName('audio')[1];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 1300px; top: 850px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause3();">
+            			<img id="roadrunner" src="animals/roadrunner_dark.png" width="150" height="150" alt="roadrunner" onclick="swapPic3(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/roadrunner.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause3() {
+       						var song = document.getElementsByTagName('audio')[2];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 1000px; top: 700px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause4();">
+            			<img id="great gray owl" src="animals/rattlesnake_dark.png" width="150" height="150" alt="rattlesnake" onclick="swapPic4(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/rattlesnake.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause4() {
+       						var song = document.getElementsByTagName('audio')[3];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 1300px; top: 600px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause5();">
+            			<img id="burrowing owl" src="animals/burrowing_owl_dark.png" width="150" height="150" alt="burrowing owl" onclick="swapPic5(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/burrowing_owl.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause5() {
+       						var song = document.getElementsByTagName('audio')[4];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+            <div style="position: absolute; left: 700px; top: 600px;">
+            	<div class="thumbnail" id="paparazzixxx">
+        			<a href="javascript:playPause6();">
+            			<img id="coyote" src="animals/coyote_dark.png" width="150" height="150" alt="coyote" onclick="swapPic6(this)" />
+        			</a>
+        	
+            		<audio id="paparazzi" preload loop>
+            			<source src="noises/coyote.mp3" type="audio/mp3" />
+            			Your browser does not support HTML5 audio.
+        			</audio>
+                    
+                    <script type="text/javascript">
+       					function playPause6() {
+       						var song = document.getElementsByTagName('audio')[5];
+       						if (song.paused)
+           						song.play();
+       						else
+           						song.pause();
+       					}
+					</script>
+                </div>
+            </div>
+        
+            <div style="position: absolute; left: 900px; top: 140px;">
+            	<a href="joshua_to_yosemite.html"><img src="arrows/up-white.png" width="100" height="100" alt="up arrow" /></a>
+            </div>
+            <div style="position: absolute; left: 1430px; top: 160px;">
+            	<a href="joshua_to_grand_canyon.html"><img src="arrows/ne-white.png" width="100" height="100" alt="up arrow" /></a>
+            </div>
+        	
+        </div>
+       
+
+		<div id="footer">
+			<div id="footer-content">
+				
+                <p>&copy; 2014 Nancy Cao | About | <a href="#">Back to top</a></p>
+			
+            </div>
+		</div>
+        
+    </body>
+</html>
